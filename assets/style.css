@@ -56,25 +56,14 @@ article {
     padding-right: 10px;
 }
 
-.project1 img {
+.project-main img {
     flex-basis: 100%;
 }
 
-.project-2-3 img {
+.project-grouping img {
     flex-basis: 35%;
  }
  
-/* .project3 img {
-    flex-basis: 50%;
-} */
-
-.project-4-5 img {
-    flex-basis: 35%;
-}
-
-/* .project5 img {
-    flex-basis: 50%;
-} */
 
 @media screen and (min-width: 800px) {
    header h1, nav {
