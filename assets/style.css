@@ -7,15 +7,20 @@
 
 body {
 
-    background-color: aliceblue;
+    background-color: rgb(203, 194, 207);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
 }
 
 header nav {
     padding-top: 10px;
     margin: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+
 }
 
 /* CSS properties applied to a class */
@@ -25,7 +30,7 @@ header nav {
     width: 100%;
     padding: 5px;
     margin-bottom: 25px;
-    background-image: url("../images/portfolio\ photo.jpg");
+    background-image: url("../Images/banner.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -34,6 +39,7 @@ section {
 display: flex;
 flex-direction: row;
 flex-wrap:wrap;
+padding: 10px; /*Created space between each row and broke up the vertical right border on aside */
 }
 
 article, aside {
@@ -50,10 +56,35 @@ article {
     padding-right: 10px;
 }
 
+.project1 img {
+    flex-basis: 100%;
+}
+
+.project-2-3 img {
+    flex-basis: 35%;
+ }
+ 
+/* .project3 img {
+    flex-basis: 50%;
+} */
+
+.project-4-5 img {
+    flex-basis: 35%;
+}
+
+/* .project5 img {
+    flex-basis: 50%;
+} */
+
 @media screen and (min-width: 800px) {
-    aside {
+   header h1, nav {
+       flex: 5;
+   }
+   
+   aside {
         flex: 2;
     }
+    
     article {
         flex: 8;
     }
