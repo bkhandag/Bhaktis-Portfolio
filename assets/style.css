@@ -1,0 +1,60 @@
+/* Universal selector applies to properties in whole html */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body {
+
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav {
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CSS properties applied to a class */
+.backgroundImage {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 25px;
+    background-image: url("../images/portfolio\ photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+}
+
+article, aside {
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+aside {
+    border-right: 3px solid grey;
+}
+
+article {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    aside {
+        flex: 2;
+    }
+    article {
+        flex: 8;
+    }
+}
