@@ -4,7 +4,9 @@
 <!-- Contains metadata about html document -->
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="./assets/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <!-- Descriptive title of the webpage -->
     <title>Bhaktis Portfolio</title>
@@ -17,15 +19,16 @@
         <h1>Bhakti Khandagale</h1>
 
         <nav>
-            <a href="#about-me">About Me    </a>
-            <a href="#work">Work    </a>
-            <a href="#contact-me">Contact Me    </a>
-            <a href="#resume">Resume</a> 
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="./Images/Bhakti Resume.pdf">Resume</a> 
         </nav>
     </header>
 
     <!-- Image related to central topic of this page -->
-    <div class="backgroundImage"></div>
+    <div class="backgroundImage"><img class="about-me-image" src="./Images/Bhakti.jpg" alt="Bhaktis image" /></div>
+    
 
     <main>
 
@@ -33,14 +36,13 @@
         <section id="about-me">
             <aside>
                 <h3>About Me</h3>
-                <img src="./Images/Bhakti.jpg" alt="Bhaktis image" />
             </aside>
             
             <article class="about-me">
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>I am a full stack engineer passionate about building innovative and easy-to-use healthcare solutions globally! I have deployed many software and hardware healthcare solutions.</p>
                 
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
+                <p>I am a resident of Seattle. I love to go camping and enjoy doing cookouts with family and friends.</p>
             
             </article>
 
@@ -51,32 +53,40 @@
                 <h3>Work</h3>
             </aside>
             
-            <article class="work">
+            <article>
+                <a class="project-display" id="main-project" href="https://github.com/bkhandag/semantic-markup-1">
+                    <!-- <section class="project-main"> -->
+                        <img src="./Images/placeholder image.jpg" alt="Semantic Markup" />
+                        <p class="text-image">Project 1</p>
+                    <!-- </section> -->
+    
+                </a>
+                
+                <!-- <section class="project-grouping"> -->
+                <a class="project-display" href="https://github.com/bkhandag/semantic-markup-1">
+                    <img src="./Images/placeholder image.jpg" alt="CSS project" />
+                    <p class="text-image">Project 2</p>
+                </a>
 
-                <section class="project-main">
-                    <img src="./Images/semantic-markup.jpg" alt="Semantic Markup" />
-                    <p>Project 1</p>
-                </section>
+                <a class="project-display" href="https://github.com/bkhandag/semantic-markup-1">
+                    <img src="./Images/placeholder image.jpg" alt="HTML project" />
+                    <p class="text-image">Project 3</p>
+                </a>
 
-                <section class="project-grouping">
-                    
-                    <img src="./Images/css.png" alt="CSS project" />
-                    <p>Project 2</p>
-               
-                    <img src="./Images/html.png" alt="HTML project" />
-                    <p>Project 3</p>
+                <!-- </section> -->
 
-                </section>
+                <!-- <section class="project-grouping"> -->
+                <a class="project-display" href="https://github.com/bkhandag/semantic-markup-1">   
+                    <img src="./Images/placeholder image.jpg" alt="Python project" />
+                    <p class="text-image">Project 4</p>
+                </a>
 
-                <section class="project-grouping">
-                    
-                    <img src="./Images/python.jpg" alt="Python project" />
-                    <p>Project 4</p>
-               
-                    <img src="./Images/java.png" alt="Java project" />
-                    <p>Project 5</p>
+                <a class="project-display" href="https://github.com/bkhandag/semantic-markup-1">
+                    <img src="./Images/placeholder image.jpg" alt="Java project" />
+                    <p class="text-image">Project 5</p>
+                </a>
 
-                </section>
+                <!-- </section> -->
 
             </article>
 
@@ -90,11 +100,16 @@
             <aside>
                 <h3>Contact Me</h3>
             </aside>
-            
-            <article class="contact-me">
-                Name email phone-number
+        
+            <article>
+            <nav class="contact-me">
+                <a href="mailto:khandagale.b.g@gmail.com">Email</a>
+                <a href="tel:+17653374290">Phone</a>
+                <a href="https://github.com/bkhandag">Github</a>
+                <a href="https://www.linkedin.com/in/bhakti-khandagale/">LinkedIn</a>
+            </nav>
             </article>
-        </section> 
+        </section>
     </footer>
     
     
