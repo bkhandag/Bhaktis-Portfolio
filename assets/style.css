@@ -2,39 +2,42 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
+/* The properties in the html body are defined here */
 body {
 
     background-color: rgb(203, 194, 207);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+/* The properties for flexbox nav inside flexbox header are defined here */
+header, header nav {
     display: flex;
     flex-wrap: wrap;
-}
-
-header nav , header h1 {
+    margin:auto;
     padding-top: 10px;
-    margin: auto;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-
 }
 
+/* Porperties only related to header nav are defined here */
+header nav {
+    justify-content: space-evenly;
+}
+
+/* Profile image properties are defined here */
 .about-me-image {
     margin: 10px;
     width: 120px;
     border-radius: 50%;
 }
 
+/* Porperties related to p in about me area of webpage */
 .about-me p {
     margin: 20px 0;
 }
 
-/* CSS properties applied to a class */
+/* CSS properties applied to a class*/
 .backgroundImage {
     display: flex;
     height: 150px;
@@ -46,6 +49,7 @@ header nav , header h1 {
     background-position: center;
 }
 
+/* Section is a row in the html. Its properties are defined here. */
 section {
 display: flex;
 flex-direction: row;
@@ -54,101 +58,68 @@ flex-wrap:wrap;
 padding: 10px;
 }
 
+/* Article and Aside are columns. Properties defined here */
 article, aside {
     flex-basis: 100%;
     padding: 10px;
 }
 
+/* Properties specific to work area of webpage are defined here. Allows the projects to be algined in desired format */
 #work article{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
 }
 
+/* Formatting of the container that has links <a> */
 .project-display {
     position: relative;
+    /* flex grow shrink and flex basis formatting */
     flex: 1 1 40%;
-    /* width: 100%; */
     padding: 10px;
 }
 
+/* Animation that highlights the project imaged that cursor is on */
 .project-display:hover {
-    /* border-color: yellow; */
     border: 9px solid purple;
     padding: 2px;
     opacity: 40%;
 }
 
+/* Image styling for all project images */
 .project-display img {
     width:100%;
+    height:100%;
 }
 
+/* Main Project styling, it takes a hundred percent of width */
 #main-project {
     flex: 1 1 100%;
 }
 
+/* Styling of text on top of each project image */
 .text-image {
     position:absolute;
     background-color: #fff;
+    color: purple;
     bottom: 30px;
     padding: 5px;
     margin: 5px;
 
 }
 
-/* .project-main {
-    background-image: url("../Images/placeholder\ image.jpg");
-    background-repeat: no-repeat;
-    height: 200px;
-    background-size: cover;
-    max-width: 94%;
-    margin-left: 3%;
-} */
-
-
-/* .text-image {
-    background-color: white;
-    max-height: 10%;
-} */
-
-.project-grouping {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* .project-grouping p {
-    background-image: url("../Images/placeholder\ image.jpg");
-    background-repeat: no-repeat;
-    height: 200px;
-    background-size: cover;
-} */
-
-
-/* .project-main p {
-    width: 80vw;
-} */
-
-/* #work img:hover {
-scroll-behavior: ;
-} */
-
+/* Formatting for column area in aside */
 aside {
     border-bottom: 3px solid grey;
 }
 
+/* Formatting for column area in article */
 article {
     padding-left: 10px;
     padding-right: 10px;
 }
-
-/* .project-main p {
-    flex-basis: 92%;
-} */
-
-.project-grouping p {
-    flex-basis: 48%;
- }
  
+/* Formatting for contact me area of webpage */
  .contact-me {
     padding-top: 10px;
     margin: auto;
@@ -157,13 +128,26 @@ article {
 
 }
 
+/* Formatting for a specfic element in class */
+.contact-me a {
+    color: purple;
+}
+
+/* Formatting for footer area */
+footer h6 {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(51, 4, 51);
+}
+
+/* When screen changes such that min width is 800 px, then change formatting */
 @media screen and (min-width: 800px) {
 
-   header h1, header nav {
+   header , header nav {
        flex: 5;
-       /* flex-basis: 51% ; */
-   }
-   
+   } 
+
    aside {
         flex: 2;
         border-right: 3px solid grey;
