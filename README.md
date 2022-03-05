@@ -12,8 +12,8 @@ This portfolio is a work in progress and will be updated in the upcoming weeks t
 *Link to deployed application:*
 https://github.com/bkhandag/Bhaktis-Portfolio
 
-*Screenshot*
-![alt text](./Images/Bhaktis portfolio readme image.png)
+*Screenshot:*
+.fileExtension: ![plot](./Images/Bhaktis-portfolio-readme-image.png)
 
 *References:*
 Used this site to make grid using flex box
