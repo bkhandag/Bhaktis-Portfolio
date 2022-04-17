@@ -13,7 +13,8 @@ This portfolio is a work in progress and will be updated in the upcoming weeks t
 https://bkhandag.github.io/Bhaktis-Portfolio/
 
 *Screenshot:*
-![plot](./Images/Bhaktis-portfolio-readme-image.png)
+![plot](./Images/Portfolio1.png)
+![plot](./Images/Portfolio2.png)
 
 *References:*
 Used this site to make grid using flex box
