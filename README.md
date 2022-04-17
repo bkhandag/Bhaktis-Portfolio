@@ -10,7 +10,7 @@ The Portfolio styling is optimized for different screen sizes.
 This portfolio is a work in progress and will be updated in the upcoming weeks to include built projects instead of placeholder images, links.
 
 *Link to deployed application:*
-https://github.com/bkhandag/Bhaktis-Portfolio
+https://bkhandag.github.io/Bhaktis-Portfolio/
 
 *Screenshot:*
 ![plot](./Images/Bhaktis-portfolio-readme-image.png)

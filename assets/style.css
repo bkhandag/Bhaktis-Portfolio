@@ -5,10 +5,19 @@
     margin: 0;
 }
 
+:root {
+    --MakeupTan: #DDAF94;
+    --Blush: #E8CEBF;
+    --ComplimentaryGreen: #266150;
+   --DarkHighlight: #4F4846;
+    --LightlyOffWhite: #FDF8F5;
+}
+
 /* The properties in the html body are defined here */
 body {
 
-    background-color: rgb(203, 194, 207);
+    /* background-color: rgb(203, 194, 207); */
+    background-color: var(--Blush);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -81,7 +90,7 @@ article, aside {
 
 /* Animation that highlights the project imaged that cursor is on */
 .project-display:hover {
-    border: 9px solid purple;
+    border: 9px solid var(--MakeupTan);
     padding: 2px;
     opacity: 40%;
 }
@@ -100,8 +109,10 @@ article, aside {
 /* Styling of text on top of each project image */
 .text-image {
     position:absolute;
-    background-color: #fff;
-    color: purple;
+    /* background-color: rgb(167, 161, 161); */
+    background-color: var(--ComplimentaryGreen);
+    /* color: purple; */
+    color: var(--LightlyOffWhite);
     bottom: 30px;
     padding: 5px;
     margin: 5px;
@@ -130,7 +141,7 @@ article {
 
 /* Formatting for a specfic element in class */
 .contact-me a {
-    color: purple;
+    color: var(--ComplimentaryGreen);
 }
 
 /* Formatting for footer area */
@@ -138,7 +149,7 @@ footer h6 {
     color: #fff;
     text-align: center;
     padding: 10px;
-    background-color: rgb(51, 4, 51);
+    background-color: var(--DarkHighlight);
 }
 
 /* When screen changes such that min width is 800 px, then change formatting */
